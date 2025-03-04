@@ -26,9 +26,19 @@ class _HomeScreenState extends State<HomeScreen> {
                 counter++;
               });
             },
-            icon: Text("$counter"),
+            icon: Icon(Icons.add),
           ),
         ],
+      ),
+
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("سبح بحمد ربك", style: TextStyle(fontSize: 50)),
+            Text("$counter", style: TextStyle(fontSize: 50)),
+          ],
+        ),
       ),
     );
   }
